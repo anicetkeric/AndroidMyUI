@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.aniceterickouame.androidmyui.Circular_Progress_Button">
+
+    <TextView android:text="Circular Progress Button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/IndeterminateProgressSample"
+        android:id="@+id/btnIPS"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/IntegerProgressSample"
+        android:id="@+id/btnInPS"
+        android:layout_below="@+id/btnIPS"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/StateChangeSample"
+        android:id="@+id/btnSCS"
+        android:layout_below="@+id/btnInPS"
+        android:layout_alignStart="@+id/btnInPS" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ProgressPaddingSample"
+        android:id="@+id/btnPPS"
+        android:layout_below="@+id/btnSCS"
+        android:layout_alignEnd="@+id/btnCSS" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CustomSelectorSample"
+        android:id="@+id/btnCSS"
+        android:layout_below="@+id/btnPPS"
+        android:layout_alignEnd="@+id/btnInPS" />
+
+</RelativeLayout>
